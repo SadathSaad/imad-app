@@ -1,17 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! I am your webapp.
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<head>
+<title>Smart-stArt</title>
+<link rel="stylesheet" href="/ui/style.css">
+<script src='https://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="/ui/index.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var sadath1 = $("#sadath1");
+var sadath2 = $("#sadath2");
+var inlF = $(".inlF");
+  if ($(this).scrollTop()> 100) {
+ sadath1.addClass("animateMe");
+ sadath2.addClass("animateMe");
+    $('nav').fadeIn(600);
+	$('div.txt_wlcm').fadeOut(1000);
+	$('div#wlcm').css({'filter':'none'});
+   } else {
+    $('nav').fadeOut(600);
+	$('div.txt_wlcm').fadeIn(1000);
+	$('div#wlcm').css({'filter':'blur(7px)'});
+   }
+});
+
+/// Scroll back to top
+ $('#scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+</script>
+</head>
+<body>
+<nav class="scrolltop">    
+<div id="top_nav">
+<h2 style="padding:20px">SmArt</h2> <div class="nav_page">
+<ul id="menu-primary"><li id="item-0" class="item_nv"><a href="#">Welcome</a></li>
+<li id="item-1" class="item_nv"><a href="#">About Me</a></li>
+<li id="item-2" class="item_nv"><a href="#">My Apps</a></li>
+<li id="item-2" class="item_nv"><a href="#">Web Designs</a></li>
+<li id="item-3" class="item_nv"><a href="#">Contact</a></li>
+</ul></div>
+<div style="background:black"><div class="shaped"><a href="#" id="scrolltop" >Top &uArr;</a></div></div>
+</div>
+</nav>
+<div id="wlcm"> </div>
+<div class="txt_wlcm">
+<div class="imgBtn_nv">
+<img src="black.png" />
+<img src="sky_blu.png" />
+<img src="red.png" />
+<img src="green.png" />
+</div>
+<h2> Smart - stArt </h2>
+<h5>"Hello There, I'm Sadath, A Oracle Apex Developer and Web Designer who Makes Smart and Effective Things.. "</h5>
+
+<h4>Start With a Better Art</h4>
+
+</div>
+<div id="middle_qt">
+<h3> GIVE ME A SMART IDIOT OVER A STUPID GENIUS ANY DAY.</h3>
+<hr>
+<h5> I'm A SmArt Person </h5>
+<p style="font-family:cursive"> I just Do StuPiD Things</p>
+</div> 
+<div>
+<div class="info"></div>
+<div class="txt_mid">
+<h3 id="sadath1"> <i>S</i>m<i>A</i>rt Introduction: - </h3>
+<blockquote id="sadath2"> <em>Hi there, This is a personal page of mine which has been created to introduce myself. You can ourview about my work which has done so far in my life.
+And mostly i also gonna add here my Best memorable captures of my College, Company and with My friends. </em> </blockquote> 
+</div>
+</div>
+<hr>
+<div id="saadApex">
+<div class="inl animatable bounceIn"><img src="Apex_logo.png" /></div>
+<div class="apx_txt inl animatable bounceInRight">
+<h3>Oracle APEX</h3><blockquote> Oracle Application Express enables you to design,
+ develop and deploy beautiful, responsive, database-driven applications using only your web browser. <br>
+ This is my First Software which has Lernt for my First Job in a IT field. And I am very happy from this where i got chance to apply both my logical coding and designs in a sigle platform.
+ </blockquote>
+</div>
+</div>
+<hr>
+<div id="saadHtml">
+<div class="html_txt inl1 bounceInLeft animatable">
+<h3>HTML, CSS, JS AND jQ</h3><blockquote> The HTML, CSS, JAVASCRIPT and offcourse awesome jQuery are the really used to customize and decorate your Website.
+And I am using it as differently as i can. But think i am an expert on these. Just i approaches to these where ever i need. To customize the APEX templates.
+ </blockquote>
+</div>
+<div class="inl1 animatable bounceIn"><img src="html_css.png" width="420px" height="300px"/></div>
+</div>
+<hr>
+<div id="saadSql">
+<div class="inl2 animatable bounceIn"><img src="SQL.jpg" width="420px" height="300px"/></div>
+<div class="sql_txt inl2 fadeInUp animatable">
+<h3>SQL and PL/ SQL </h3><blockquote> Structured Query Language is a special-purpose domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), 
+or for stream processing in a relational data stream management system (RDSMS). And PL/ SQL is procedural language designed specifically to embrace SQL statements within its syntax.
+These both will Play Back Bone of the Oracle APEX.
+ </blockquote>
+</div>
+</div>
+<hr>
+<div id="saadAndr">
+<div class="andr_txt inl3 fadeInDown animatable">
+<h3>Angular JS and ANDROID</h3><blockquote> Keen to learn these both Languages, Not for professioinal but just for hobby. To paste my all thuoghts and Ideas of ma mind into the
+ Display.
+ </blockquote>
+</div>
+<div class="inl3 animatable bounceIn"><img src="andr.png" width="420px" height="300px"/></div>
+</div>
+<hr>
+<footer style="height:300px;width:calc(100% - 6em);margin:auto">
+
+<div style="height:100%;width:74%;margin:auto">
+<div class="bounceInLeft animatable inlF"><div style="position: absolute; top: -40%;width:100%;text-align: center;"><img src="cntct.png" width= "200px"/>
+<h3 style="text-align: center;border: 1px solid black;position: relative;top: -50px; background: #f6f6f6;margin:0">Contact Me</h3>
+<p style="text-align: center;position: relative; top: -50px;padding-top: 50px; margin: 0; background: #f6f6f6;"> <strong>Sadath K M </strong> <br>Ask me anything! I am here to answer any questions you have.<br> Email: sadathullakhaliq@gmail.com</p>
+</div>
+</div>
+<div class="bounceIn animatable inlF"><div style="position: absolute; top: -30%;width:100%;text-align: center;"><img src="Tweet.png" width= "200px"/>
+<h3 style="text-align: center;border: 1px solid black;position: relative;top: 11px; background: #f6f6f6;margin:0">Follow Me On</h3>
+<p style="text-align: center;padding-top: 63px;margin: 0;background: #f6f6f6;"> Follow and Like in Social Website.<br>
+<div class="animatable"> <img src="socialF.png" class="socl animatable bounceIn0" /> <img src="socialT.png" class="socl animatable bounceIn2"/> <img src="socialG.png" class="socl animatable bounceIn3"/> <img src="socialL.png" class="socl animatable bounceIn4"/> </div>
+</p>
+</div>
+</div>
+<div class="bounceInRight animatable inlF"><div style="position: absolute; top: -20.7%;width:100%;text-align: center;"><img src="Subscr.png" width= "200px"/>
+<h3 style="text-align: center;border: 1px solid black;position: relative;top: -50px; background: #f6f6f6;margin:0">Suscribe</h3>
+<p style="text-align: center;position: relative; top: -50px;padding-top: 50px; margin: 0; background: #f6f6f6;"> Subscribe : <br> <input ng-class="{invalid: !main.validEmail}" ng-model="main.subscriberEmail" placeholder="Email Address" type="email"><button > Suscribe </button>
+</p><img src="socialY.png" style="margin:-20px" /></div>
+</div>
+</div>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="sadath-k-m-b681789b"><a class="LI-simple-link" href='https://in.linkedin.com/in/sadath-k-m-b681789b?trk=profile-badge'>Sadath K M</a></div>
+</footer>
+
+</body>
 </html>
