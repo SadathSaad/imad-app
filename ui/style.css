@@ -708,3 +708,89 @@ div#middle_qt	{
 	-o-animation-name: moveUp;
 	animation-name: moveUp;
 }
+div.leftNav {
+    position: absolute;
+    overflow: auto;
+    height: 700px;
+    left: 0px;
+    top: 46px;
+}
+div#lNav .ls:hover {
+    padding: 2px;
+    box-shadow: 3px 2px 6px black;
+    cursor: pointer;
+}
+div#Mbody{position:relative}
+body, div.leftNav,div#hdr{background: #6f6456;}
+div#hdr {
+    width: 100%;z-index:50;
+    height: 45px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+div#hdr:hover img.skilLogo1 {animation: Saad 2s;}
+div#hdr:hover img.skilLogo {animation: SaadL 2s;}
+.Mainl {
+    display: inline-block;
+    vertical-align: top;
+}
+div#lNav .ls {
+    width: 250px;
+    background: yellowgreen;
+    margin: 15px;
+    height: 76px;
+}
+div#divBody .cd {
+    background: yellow;
+    display: inline-block;
+    width: 22%;position:relative;
+    padding: 8px;overflow:hidden;
+    margin: 4px;
+    height: 200px;
+}
+div#divBody {
+    width: 1000px;
+    margin-left: 300px;
+    margin-top: 45px;
+}	
+.cd:hover div.hid {
+    bottom: 0!important;
+}
+div.hid{ position: absolute;
+    bottom: -30%;
+    width: 100%;
+    left: 0;
+    height: 30%;background:rgba(0, 0, 0, 0.28);
+    text-align: center;
+    transition: all 0.5s ease-in,out;
+}
+div.hd {
+    display: inline-block;
+    float: right;
+    margin: 1px;
+    background: yellowgreen;
+    padding: 13px;
+}
+img.skilLogo{    width: 100px}
+
+@keyframes Saad{
+	0%{position: absolute;left:300%;top: -5px}
+	20%{position: absolute;top: 5px;}
+	40%{position: absolute;top: -5px;}
+	60%{position: absolute;top: 5px;}
+	80%{position: absolute;top: -5px;}
+100%{position: absolute;left:100px;}}
+@keyframes SaadL{
+	0%{position: absolute;left: -300px;transform: rotateY(360deg);}
+100%{position: absolute;left: 0px;transform: rotateY(0deg);}}
+.MadiL {
+    position: absolute;
+    left: 20%;
+    top: -12px;width:50%;
+}
+div.hd:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+}
