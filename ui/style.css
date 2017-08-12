@@ -729,8 +729,8 @@ div#hdr {
     top: 0px;
     left: 0px;
 }
-div#hdr:hover img.skilLogo1,img.mLg:hover img.skilLogo1 {animation: Saad 2s;}
-div#hdr:hover img.skilLogo,img.mLg:hover img.skilLogo {animation: SaadL 2s;}
+div#hdr:hover img.skilLogo1 {animation: Saad 2s;}
+div#hdr:hover img.skilLogo {animation: SaadL 2s;}
 .Mainl {
     display: inline-block;
     vertical-align: top;
