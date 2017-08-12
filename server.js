@@ -5,6 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/ui/imadSecnd.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.jpg'));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -31,9 +34,7 @@ app.get('/ui/imadAn.png', function (req, res) {
 app.get('/ui/imadL.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'imadL.png'));
 });
-app.get('/ui/imadSecnd.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.jpg'));
-});
+
 app.get('/ui/imadStrt.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'imadStrt.jpg'));
 });
