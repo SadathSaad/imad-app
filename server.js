@@ -19,7 +19,36 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
+app.get('/ui/Tweet.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Tweet.png'));
+});
+app.get('/ui/cntct.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cntct.png'));
+});
+app.get('/ui/imadAn.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadAn.png'));
+});
+app.get('/ui/imadL.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadL.png'));
+});
+app.get('/ui/imadSecnd.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.png'));
+});
+app.get('/ui/imadStrt.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadStrt.png'));
+});
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'socialF.png'));
+});
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'socialG.png'));
+});
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'socialL.png'));
+});
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'socialT.png'));
+});
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
