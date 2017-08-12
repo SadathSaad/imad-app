@@ -63,10 +63,6 @@ animation:saad 3s}
 100% {transform:translateX(0px)}
 }
 
-
-   .imgBtn_nv {width: 10px;
-    float: right; opacity:0.7;
-    margin-right: -70px;}
 .shaped{
     float: left;
     height: 134px;
@@ -80,15 +76,7 @@ animation:saad 3s}
     /*...*/
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
 }
-	.imgBtn_nv img {
-    box-shadow: 3px 4px 8px;
-    border-radius: 77px;
-}
-.imgBtn_nv img:hover {
-    box-shadow: 1px 1px 1px;
-    padding: 1px;
-	cursor: -webkit-grab;
-}
+
 ul li.item_nv {
     display: inline-block;
     margin: 0 0.25em;
