@@ -31,22 +31,22 @@ app.get('/ui/imadAn.png', function (req, res) {
 app.get('/ui/imadL.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'imadL.png'));
 });
-app.get('/ui/imadSecnd.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.png'));
+app.get('/ui/imadSecnd.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.jpg'));
 });
-app.get('/ui/imadStrt.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'imadStrt.png'));
+app.get('/ui/imadStrt.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imadStrt.jpg'));
 });
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/socialF.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'socialF.png'));
 });
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/socialG.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'socialG.png'));
 });
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/socialL.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'socialL.png'));
 });
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/socialT.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'socialT.png'));
 });
 
