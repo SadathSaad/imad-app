@@ -16,11 +16,11 @@ height:70px; color:white}
 div#wlcm{
 height:690px; 	
 width:100%;
-    background-image: url('imadStrt.jpg');
+    background-image: url('/ui/imadStrt.jpg');
     background-size: 100% 100%; filter:blur(7px);
 	background-attachment:fixed;
 }
-div.info{background-image: url(imadSecnd.jpg);
+div.info{background-image: url(/ui/imadSecnd.jpg);
     filter: blur(3px);
     height: 200px;
     width: 100%;
