@@ -1,5 +1,15 @@
 var element = document.getElementById('rollO');
 element.innerHTML ='I am Rolling Out Here..!!';
+
+var imad = document.getElementById('mLg');
+var marginLt = 0;
+function movRt (){
+    marginLt = marginLt + 10;
+    imad.style.marginLeft = marginRt + 'px';
+}
+imad.onClick= function (){
+    var interval = setInterval(movRt,100);
+}
 jQuery(function($) {
   
   // Function which adds the 'animated' class to any '.animatable' in view
