@@ -5,9 +5,9 @@ var imad = document.getElementsByClassName('mLg');
 var marginLt = 0;
 function movRt (){
     marginLt = marginLt + 10;
-    imad.style.marginLeft = marginRt + 'px';
+    imad.style.marginLeft = marginLt + 'px';
 }
-imad.onClick= function (){
+imad.onclick= function (){
     var interval = setInterval(movRt,100);
 }
 jQuery(function($) {
