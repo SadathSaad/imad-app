@@ -1,4 +1,4 @@
-var element = document.getElementById('rollO');
+var element = document.getElementById(rollO);
 element.innerText='I am Rolling Out here...!'
 jQuery(function($) {
   
