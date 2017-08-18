@@ -42,8 +42,8 @@ function moveRight (){
 imad.onclick= function (){
     var interval = setInterval(moveRight,100);
 element.innerHTML ='I am Rolling Out Here..!!';
-};
-
 element.onclick=function () {
     clearInterval(interval);
 }
+};
+
