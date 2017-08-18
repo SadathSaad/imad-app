@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/ui/SmArt.ico', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'SmArt.ico'));
 });
-app.get('/ui/SmArt_Icon.jpg', function (req, res) {
+app.get('/ui/SmArt.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'SmArt.png'));
 });
 
