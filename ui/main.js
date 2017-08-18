@@ -31,4 +31,4 @@ jQuery(function($) {
 });
 
 var element = document.getElementById('rollO');
-element.innerHtml = 'I am Rolling Out...!';
+element.innerHTML = 'I am Rolling Out...!';
