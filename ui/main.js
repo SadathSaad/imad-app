@@ -35,7 +35,7 @@ var marginLeft = 0;
 function moveRight (){
     marginLeft = marginLeft + 10;
     imad.style.marginLeft = marginLeft + 'px';
-    if (marginLeft == 500){
+    if (marginLeft == 1000){
         marginLeft = -50;
     }
 }
