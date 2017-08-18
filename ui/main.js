@@ -1,5 +1,5 @@
 var element = document.getElementById('rollO');
-element.innerHTML='I am Rolling Out here...!';
+element.innerText='I am Rolling Out here...!';
 
 jQuery(function($) {
   
