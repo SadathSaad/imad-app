@@ -5,6 +5,13 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/ui/SmArt.ico', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'SmArt.ico'));
+});
+app.get('/ui/SmArt_Icon.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'SmArt_Icon.jpg'));
+});
+
 app.get('/ui/imadSecnd.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'imadSecnd.jpg'));
 });
