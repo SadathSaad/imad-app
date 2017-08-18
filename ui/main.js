@@ -1,10 +1,4 @@
 console.log('Loaded!');
-// Trigger CSS animations on scroll.
-// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
-
-// Looking for a version that also reverses the animation when
-// elements scroll below the fold again?
-// --> Check https://codepen.io/bramus/pen/vKpjNP
 
 jQuery(function($) {
   
@@ -35,3 +29,6 @@ jQuery(function($) {
   $(window).trigger('scroll');
 
 });
+
+var element = document.getElementById('rollO');
+element.innerHtml = 'I am Rolling Out...!';
