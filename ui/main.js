@@ -1,7 +1,7 @@
 var element = document.getElementById('rollO');
 element.innerHTML ='I am Rolling Out Here..!!';
 
-var imad = document.getElementById('mLg');
+var imad = document.getElementByClassName('mLg');
 var marginLt = 0;
 function movRt (){
     marginLt = marginLt + 10;
