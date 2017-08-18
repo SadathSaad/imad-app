@@ -1,6 +1,6 @@
 var element = document.getElementById('rollO');
 element.innerHTML ='I am Rolling Out Here..!!';
-var imad = document.getElementsByClassName('mLg');
+var imad = document.getElementById('mLg');
 var marginLeft = 0;
 function moveRight (){
     marginLeft = marginLeft + 10;
