@@ -35,6 +35,9 @@ var marginLeft = 0;
 function moveRight (){
     marginLeft = marginLeft + 10;
     imad.style.marginLeft = marginLeft + 'px';
+    if (marginLeft == 500){
+        marginLeft = -50;
+    }
 }
 imad.onclick= function (){
     var interval = setInterval(moveRight,100);
