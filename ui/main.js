@@ -1,6 +1,5 @@
 var element = document.getElementById('rollO');
-element.innerText='I am Rolling Out here...!';
-
+element.innerText='I am Rolling Out here...!'
 jQuery(function($) {
   
   // Function which adds the 'animated' class to any '.animatable' in view
