@@ -29,8 +29,7 @@ jQuery(function($) {
 
 });
 
-var element = document.getElementById('rollO');
-element.innerHTML ='I am Rolling Out Here..!!';
+
 var imad = document.getElementById('mLg');
 var marginLeft = 0;
 function moveRight (){
@@ -39,4 +38,6 @@ function moveRight (){
 }
 imad.onclick= function (){
     var interval = setInterval(moveRight,100);
+    var element = document.getElementById('rollO');
+element.innerHTML ='I am Rolling Out Here..!!';
 }
