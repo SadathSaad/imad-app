@@ -58,7 +58,7 @@ for (var i = 0; i < cds.length; i ++) {
     cds[i].style.display = 'inline-block';
 }};
 list2.onclick=function () {
-for (var i = 0; i < maps.length; i ++) {
+for (var i = 0; i < cds.length; i ++) {
     cds[i].style.display = 'none';
     maps[i].style.display = 'table-cell';
 }}
