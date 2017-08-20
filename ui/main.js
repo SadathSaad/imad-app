@@ -48,7 +48,7 @@ element.onclick=function () {
 }
 };
 
-var list1 = document.getElementsByClassName('list1');
+var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
 list1.onclick=function () {
 for (var i = 0; i < maps.length; i ++) {
