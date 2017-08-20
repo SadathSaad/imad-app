@@ -48,7 +48,7 @@ element.onclick=function () {
 }
 };
 
-function initMap() {
+      function initMap() {
         var locationRio = {lat: -22.915, lng: -43.197};
         var map = new google.maps.Map(document.getElementById('map1'), {
           zoom: 13,
@@ -61,3 +61,4 @@ function initMap() {
           title: 'Hello World!'
         });
       }
+    
