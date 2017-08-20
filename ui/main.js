@@ -66,3 +66,9 @@ for (var i = 0; i < cds.length; i ++) {
     maps[j].style.display = 'table-cell';
 }};
 
+var clk = document.getElementById('counter');
+var counter= 0;
+clk.onclick = function (){
+    counter = counter+1;
+    document.getElementById('count').innerHTML = counter.toString();
+}
