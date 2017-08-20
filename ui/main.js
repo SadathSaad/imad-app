@@ -50,7 +50,15 @@ element.onclick=function () {
 
 var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
+var list2 = document.getElementById('l2');
+var cds = document.getElementsByClassName('cd'), i;
 list1.onclick=function () {
 for (var i = 0; i < maps.length; i ++) {
     maps[i].style.display = 'none';
+    cds[i].style.display = 'block';
+}};
+list2.onclick=function () {
+for (var i = 0; i < cds.length; i ++) {
+    cds[i].style.display = 'none';
+    maps[i].style.display = 'block';
 }}
