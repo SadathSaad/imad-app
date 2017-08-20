@@ -78,7 +78,7 @@ clk.onclick = function (){
     $(clk).attr('disabled',true);$(clk).css({'background':'black'});
             }
         }
-    // Process the server response here.
 };
-    
+    request.open('GET', '/counter');
+    request.send();
 }
