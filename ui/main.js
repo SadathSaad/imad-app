@@ -47,7 +47,7 @@ element.onclick=function () {
     element.innerHTML ='Smart - stArt';
 }
 };
-document.getElementById("map1").style.display = 'none';
+
 var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
 var list2 = document.getElementById('l2');
@@ -66,3 +66,10 @@ for (var i = 0; i < cds.length; i ++) {
     for (var j = 0; j < maps.length; j ++) {
     maps[j].style.display = 'table-cell';
 }}
+
+$(function() {
+     $("#l1").on("click", function() {
+        $("#map1").load("index.html")
+        return false;
+    })
+  })
