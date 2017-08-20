@@ -789,7 +789,7 @@ img.skilLogo{    width: 100px}
 	0%{position: absolute;left: -300px;transform: rotateY(360deg);}
 100%{position: absolute;left: 0px;transform: rotateY(0deg);}}
 .MadiL {
-    position: absolute;
+    position: fixed;
     left: 20%;
     top: -12px;width:50%;
 }
