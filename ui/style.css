@@ -756,7 +756,7 @@ div#divBody .cd {
 div#divBody {
     width: 1000px;
     margin-left: 300px;
-    margin-top: 45px;
+    margin-top: 45px;overflow-y:auto;
 }	
 .cd:hover div.hid {
     bottom: 0!important;
