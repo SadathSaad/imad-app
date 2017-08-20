@@ -71,5 +71,6 @@ var counter= 0;
 clk.onclick = function (){
     counter = counter+1;
     document.getElementById('count').innerHTML = counter.toString();
-    $(clk).attr('disabled',true);
+    $(clk).attr('disabled',true);$(clk).css({'background':'lightgreen'});
+    clk.innerHTML('Liked');
 }
