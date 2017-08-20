@@ -68,7 +68,7 @@ for (var i = 0; i < cds.length; i ++) {
 }}
 
 $(function() {
-     $("#l1").on("click", function() {
+     $("#l2").on("click", function() {
         $("#map1").load("index.html")
         return false;
     })
