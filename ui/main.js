@@ -44,6 +44,7 @@ imad.onclick= function (){
 element.innerHTML ='I am Rolling Out Here..!! <i style="font-size:17px;color:red"> Click to Stop Me!!</i>';
 element.onclick=function () {
     clearInterval(interval);
+    element.innerHTML ='Smart - stArt';
 }
 };
 
