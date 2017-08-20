@@ -47,7 +47,6 @@ element.onclick=function () {
     element.innerHTML ='Smart - stArt';
 }
 };
-document.getElementById('map1').style.display = 'none';
 var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
 var list2 = document.getElementById('l2');
