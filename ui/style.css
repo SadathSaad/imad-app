@@ -776,7 +776,7 @@ div.hd {
     padding: 13px;
 }
 img.skilLogo{    width: 100px}
-
+.map{display:none;}
 @keyframes Saad{
 	0%{position: absolute;left:300%;top: -5px}
 	20%{position: absolute;top: 5px;}
