@@ -69,9 +69,17 @@ for (var i = 0; i < cds.length; i ++) {
 var clk = document.getElementById('counter');
 var counter= 0;
 clk.onclick = function (){
-    counter = counter+1;
-    document.getElementById('count').innerHTML = counter.toString();
+    var request=new XMLhttpRequest();
+    Request.onreadystatechange = function(){
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            if (httpRequest.status === 200) {
+                var counter = request.responseText;
+                document.getElementById('count').innerHTML = counter.toString();
     clk.innerHTML=('Liked');
     $(clk).attr('disabled',true);$(clk).css({'background':'black'});
+            }
+        }
+    // Process the server response here.
+};
     
 }
