@@ -70,8 +70,8 @@ var clk = document.getElementById('counter');
 clk.onclick = function (){
     var request=new XMLHttpRequest();
     request.onreadystatechange = function(){
-        if (httpRequest.readyState === XMLHttpRequest.DONE) { alert('hii');
-            if (httpRequest.status === 200) {
+        if (request.readyState === XMLHttpRequest.DONE) { alert('hii');
+            if (request.status === 200) {
                
                 var counter = request.responseText;
                 document.getElementById('count').innerHTML = counter.toString();
