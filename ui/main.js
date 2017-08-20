@@ -70,9 +70,9 @@ var clk = document.getElementById('counter');
 clk.onclick = function (){
     var request=new XMLHttpRequest();
     request.onreadystatechange = function(){
-        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) { alert('hii');
             if (httpRequest.status === 200) {
-                alert('hii');
+               
                 var counter = request.responseText;
                 document.getElementById('count').innerHTML = counter.toString();
     clk.innerHTML=('Liked');
