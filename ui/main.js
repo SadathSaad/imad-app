@@ -67,7 +67,6 @@ for (var i = 0; i < cds.length; i ++) {
 }};
 
 var clk = document.getElementById('counter');
-var counter= 0;
 clk.onclick = function (){
     var request=new XMLhttpRequest();
     Request.onreadystatechange = function(){
