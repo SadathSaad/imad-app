@@ -53,12 +53,12 @@ var maps = document.getElementsByClassName('map'), i;
 var list2 = document.getElementById('l2');
 var cds = document.getElementsByClassName('cd'), i;
 list1.onclick=function () {
-for (var i = 0; i < maps.length; i ++) {
+for (var i = 0; i < maps.length || i < cds.length; i ++) {
     maps[i].style.display = 'none';
     cds[i].style.display = 'inline-block';
 }};
 list2.onclick=function () {
-for (var i = 0; i < cds.length; i ++) {
+for (var i = 0; i < cds.length || i < maps.length; i ++) {
     cds[i].style.display = 'none';
     maps[i].style.display = 'table-cell';
 }}
