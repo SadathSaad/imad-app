@@ -72,6 +72,7 @@ clk.onclick = function (){
     request.onreadystatechange = function(){
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
+                alert('hii');
                 var counter = request.responseText;
                 document.getElementById('count').innerHTML = counter.toString();
     clk.innerHTML=('Liked');
