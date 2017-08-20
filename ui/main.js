@@ -49,5 +49,8 @@ element.onclick=function () {
 };
 
 var list1 = document.getElementsByClassName('list1');
-var maps = document.getElementsByClassName('map');
-list1.onclick= function (){ maps.style.visbility = 'hidden'}
+var maps = document.getElementsByClassName('map'), i;
+
+for (var i = 0; i < maps.length; i ++) {
+    maps[i].style.display = 'none';
+}
