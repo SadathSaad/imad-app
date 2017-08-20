@@ -68,7 +68,7 @@ for (var i = 0; i < cds.length; i ++) {
 
 var clk = document.getElementById('counter');
 clk.onclick = function (){
-    var request=new XMLhttpRequest();
+    var request=new XMLHttpRequest();
     Request.onreadystatechange = function(){
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
