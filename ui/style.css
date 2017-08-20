@@ -725,7 +725,7 @@ div#lNav .ls:hover {
     cursor: pointer;
 }
 div#Mbody{position:relative}
-body, div.leftNav,div#hdr{background: #6f6456;}
+body, div.leftNav,div#hdr{background: #6f6456;overflow-x:hidden;}
 div#hdr {
     width: 100%;z-index:50;
     height: 45px;
