@@ -54,8 +54,8 @@ var list2 = document.getElementById('l2');
 var cds = document.getElementsByClassName('cd'), i;
 list1.onclick=function () {
 for (var i = 0; i < maps.length; i ++) {
-    maps[i].style.display = 'none';
-    cds[i].style.display = 'block';
+    maps[i].style.visibility = 'hidden';
+    cds[i].style.visibility = 'visible';
 }};
 list2.onclick=function () {
 for (var i = 0; i < cds.length; i ++) {
