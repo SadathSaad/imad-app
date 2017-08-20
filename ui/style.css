@@ -798,3 +798,7 @@ div.hd:hover {
     color: white;
     border: 1px solid black;
 }
+.ls p{
+    text-align: center;
+    padding: 30px;
+}
