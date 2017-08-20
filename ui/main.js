@@ -47,18 +47,3 @@ element.onclick=function () {
     element.innerHTML ='Smart - stArt';
 }
 };
-
-      function initMap() {
-        var locationRio = {lat: -22.915, lng: -43.197};
-        var map = new google.maps.Map(document.getElementById('map1'), {
-          zoom: 13,
-          center: locationRio,
-          gestureHandling: 'cooperative'
-        });
-        var marker = new google.maps.Marker({
-          position: locationRio,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    
