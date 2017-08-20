@@ -79,6 +79,6 @@ clk.onclick = function (){
             }
         }
 };
-    request.open('GET', '/counter');
+    request.open('GET', '/counter',true);
     request.send();
 }
