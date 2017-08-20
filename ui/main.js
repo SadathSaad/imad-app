@@ -65,3 +65,4 @@ for (var i = 0; i < cds.length; i ++) {
     for (var j = 0; j < maps.length; j ++) {
     maps[j].style.display = 'table-cell';
 }};
+
