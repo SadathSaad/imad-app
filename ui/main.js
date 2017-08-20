@@ -50,7 +50,7 @@ element.onclick=function () {
 
 function initMap() {
         var locationRio = {lat: -22.915, lng: -43.197};
-        var map = new google.maps.Map(document.getElementsByClassName('map'), {
+        var map = new google.maps.Map(document.getElementById('map1'), {
           zoom: 13,
           center: locationRio,
           gestureHandling: 'cooperative'
