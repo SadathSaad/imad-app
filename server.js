@@ -14,7 +14,7 @@ var config = {
 };
 var pool = new Pool(config);
 app.get('/test_db',function (req,res){
-   pool.query('SELECT * FROM TEST',function(req, result){
+   pool.query('SELECT * FROM LIKES',function(req, result){
        if (err){
       res.status(500).send(err.toString());
        }else{
