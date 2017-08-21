@@ -12,7 +12,6 @@ app.use(morgan('combined'));
     port: '5432',
     password: process.env.DB_PASSWORD
 };*/
-alert('hii');
 //var pool = new Pool(config);
 /*app.get('/test-db',function (req,res){
    pool.query('SELECT * FROM LIKES',function(req, result){
