@@ -19,7 +19,7 @@ pool.query('SELECT * FROM page_lks', function(err, result) {
 if(err){
 res.status(500).send(err.toString());
 }else{
-res.send(JSON.stringify(result));
+res.send(JSON.stringify(result.rows));
 }
 });
 
