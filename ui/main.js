@@ -82,4 +82,5 @@ clk.onclick = function (){
 };
     request.open('GET', 'http://sadathullakhaliq.imad.hasura-app.io/counter',true);
     request.send(null);
-}
+};
+
