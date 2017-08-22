@@ -22,7 +22,7 @@ var htmlTemplate=`
  <h1>
  ${title}
  </h1>
- <p>${date}</p>
+ <p>${date.toDateString()}</p>
  <hr>
  <p>${text}</p>
   </body>
