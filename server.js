@@ -12,6 +12,10 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
+function createTemplate (data){
+    var title = data.title;
+    var date = data.date;
+    var text = data.text;
 var htmlTemplate=`
   <html>
   <body>
@@ -24,7 +28,8 @@ var htmlTemplate=`
   </body>
   </html>
 `;
-
+return htmlTemplate;
+}
 var pool = new Pool(config);
 app.get('/article/:articleName', function (req, res){
 pool.query("SELECT * FROM page_lks title = " + req.params.articleName, function(err, result) {
