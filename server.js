@@ -15,7 +15,7 @@ var config = {
 };
 function hash (input, salt){
     var hashed = crypto.pbkdf2ync(input, 'salt', 100000, 512, 'sha512');
-    return hashed;
+    return hashed.toString('hex');
 }
 function createTemplate (data){
     var title = data.title;
@@ -53,7 +53,7 @@ res.send(createTemplate(articleData));}
 });
 var counter = 0;
 app.get('/hash/:input',function (req, res){
-   var hashedString = hash(req.parems.input,salt);
+   var hashedString = hash(req.parems.input,salt,'this-some');
    res.send(hashedString);
 });
 app.get('/counter',function(req,res){
