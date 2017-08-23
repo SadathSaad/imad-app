@@ -50,7 +50,7 @@ res.send(createTemplate(articleData));}
 });
 var counter = 0;
 function hash (input, salt){
-    var hashed = crypto.pbkdf2ync(input, 'salt', 10000, 512, 'sha512');
+    var hashed = crypto.pbkdf2Sync(input, 'salt', 10000, 512, 'sha512');
     return hashed.toString('hex');
 }
 app.get('/hash/:input',function (req, res){
