@@ -53,7 +53,7 @@ res.send(createTemplate(articleData));}
 });
 var counter = 0;
 app.get('/hash/:input',function (req, res){
-   var hashedString = hash(req.parems.input,salt,'this-some');
+   var hashedString = hash(req.parems.input,'this-some');
    res.send(hashedString);
 });
 app.get('/counter',function(req,res){
