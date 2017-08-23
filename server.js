@@ -52,7 +52,7 @@ res.send(createTemplate(articleData));}
 
 });
 var counter = 0;
-app.get('/hash/:hashed',function (req, res){
+app.get('/hash/:input',function (req, res){
    var hashedString = hash(req.parems.input,salt);
    res.send(hashedString);
 });
