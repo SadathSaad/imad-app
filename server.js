@@ -4,6 +4,7 @@ var path = require('path');
 var Pool = require('pg').Pool;
 var app = express();
 app.use(morgan('combined'));
+var crypto = require('crypto');
 
 var config = {
     user: 'sadathullakhaliq',
@@ -12,6 +13,10 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
+function hash (input, salt){
+    var hashed = crypto.pbkdf2ync(input, 'salt', 100000, 512, 'sha512');
+    return hashed;
+}
 function createTemplate (data){
     var title = data.title;
     var date = data.date;
@@ -47,6 +52,10 @@ res.send(createTemplate(articleData));}
 
 });
 var counter = 0;
+app.get('/hash/:hashed',function (req, res){
+   var hashedString = hash(req.parems.input,salt);
+   res.send(hashedString);
+});
 app.get('/counter',function(req,res){
     counter = counter+1;
     res.send(counter.toString());
