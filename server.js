@@ -13,10 +13,7 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
-function hash (input, salt){
-    var hashed = crypto.pbkdf2ync(input, 'salt', 100000, 512, 'sha512');
-    return hashed.toString('hex');
-}
+
 function createTemplate (data){
     var title = data.title;
     var date = data.date;
@@ -52,6 +49,10 @@ res.send(createTemplate(articleData));}
 
 });
 var counter = 0;
+function hash (input, salt){
+    var hashed = crypto.pbkdf2ync(input, 'salt', 100000, 512, 'sha512');
+    return hashed.toString('hex');
+}
 app.get('/hash/:input',function (req, res){
    var hashedString = hash(req.parems.input,'this-some');
    res.send(hashedString);
