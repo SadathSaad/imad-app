@@ -29,7 +29,7 @@ clk.onclick = function (){
             }
         };
 };
-    request.open('GET', '/counter',true);
+ //   request.open('GET', '/counter',true);
     request.send(null);
 
 
