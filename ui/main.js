@@ -14,20 +14,6 @@ var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
 var list2 = document.getElementById('l2');
 var cds = document.getElementsByClassName('cd'), i;
-list1.onclick=function () {
-for (var i = 0; i < cds.length; i ++) {
-    cds[i].style.display = 'inline-block';
-}
-    for (var j = 0; j < maps.length; j ++) {
-    maps[j].style.display = 'none';}
-};
-list2.onclick=function () {
-for (var i = 0; i < cds.length; i ++) {
-    cds[i].style.display = 'none';
-}
-    for (var j = 0; j < maps.length; j ++) {
-    maps[j].style.display = 'table-cell';
-}};
 
 var clk = document.getElementById('counter');
 clk.onclick = function (){
