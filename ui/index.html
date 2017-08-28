@@ -1,803 +1,142 @@
-.map {
-    display: table-cell;
-    padding: 10px;
-}
-hr {
-    border: 1px solid black;
-    border-image: linear-gradient(to left,black, rgb(21, 59, 199),#00ff89) 1;
-}
-
-.inlF{ 
-display:inline-block;
-width:300px;height:100%;margin-top: 2%;
-    background: rgba(0, 0, 0, 0.04);}
-div#top_nav{
-position:fixed; top:0;
-z-index:30;
-width:100%;
-background:rgba(0, 0, 0, 0.61);
-height:70px; color:white}
-div#wlcm{
-height:690px; 	
-width:100%;
-    background-image: url('/ui/imadStrt.jpg');
-    background-size: 100% 100%; filter:blur(7px);
-	background-attachment:fixed;
-}
-div.info{background-image: url(/ui/imadSecnd.jpg);
-    filter: blur(3px);
-    height: 200px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-top: -20px;}
-
-div.txt_wlcm{color:white;
-position:absolute;
-top:50%;
-left:50%;
-transform: translate(-50%, -50%);
-font-size: xx-large;
-text-shadow: 2px 4px 5px black;
-}
-div.txt_mid {
-    color: white;
-    position: absolute;
-    top: 120%;
-    left: 50%;
-    transform: translate(-38%, -76%);
-    font-size: larger;
-    text-shadow: 2px 4px 5px black;
-    width: 70%;
-}
-#sadath1.animateMe{
-animation:saad 2s}
-#sadath2.animateMe{
-animation:saad 3s}
-
-@keyframes saad {
-0% { transform:translateX(-200px)}
-100% {transform:translateX(0px)}
-}
-
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart-stArt</title>
+<link rel="shortcut icon" href="/ui/SmArt.ico" type="image/x-icon">
+<link rel="stylesheet" href="/ui/style.css">
+<script src='https://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
    
-.shaped{
-    float: left;
-    height: 134px;
-    width: 260px;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.61);
-    top: 70px;
-    right: 0;
-}
-.shaped{
-    /*...*/
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
-}
-
-
-div.nav_page{position: absolute;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    right: 2%;
-    top: 10%;}
-.scrolltop {
-z-index:500;
- display:none;
-}
-#scrolltop{
-    color: white;
-    float: right;
-    text-decoration: none;
-    position: absolute;
-    bottom: 12%;
-    right: 2%;
-    font-weight: bold;}
-div#middle_qt	{
-	width: 14%;
-    text-align: center;
-    padding: 2%;
-    background: rgba(0, 0, 255, 0.61);
-    color: white;
-    position: absolute;
-    z-index: 5;
-    bottom: -17%;line-height:2;
-    left: 5%;}
-	
-	img.socl {
-    width: 35px;
-    margin: 10px;
-}
-.block {
-  height: 5em;
-  line-height: 5em;
-  width: 10em;
-  background: #464646;
-  color: #fdfdfd;
-  text-align: center;
-  margin: 1em auto;
-  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
-}
-
-.animatable {
-  
-  /* initially hide animatable objects */
-  visibility: hidden;
-  
-  /* initially pause animatable objects their animations */
-  -webkit-animation-play-state: paused;   
-  -moz-animation-play-state: paused;     
-  -ms-animation-play-state: paused;
-  -o-animation-play-state: paused;   
-  animation-play-state: paused; 
-}
-
-/* show objects being animated */
-.animated {
-  visibility: visible;
-  
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -ms-animation-play-state: running;
-  -o-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.bounceIn0 { animation: bounceIn1 3s; cursor:pointer;
-}
-.bounceIn2 { animation: bounceIn1 4s;cursor:pointer;
-}
-.bounceIn3 { animation: bounceIn1 5s;cursor:pointer;
-}
-.bounceIn4 { animation: bounceIn1 6s;cursor:pointer;
-}
-
-/* CSS Animations (extracted from http://glifo.uiparade.com/) */
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-	}	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
-}
-
-@-moz-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-
-@-o-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-20px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-moz-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@-o-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	60% {
-		opacity: 0;
-	}
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-@-webkit-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-2000px);
-	}
-	60% {
-		-webkit-transform: translateX(20px);
-	}
-
-	80% {
-		-webkit-transform: translateX(-5px);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
-	}
-}
-
-@-moz-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-moz-transform: translateX(-2000px);
-	}
-
-	60% {
-		-moz-transform: translateX(20px);
-	}
-
-	80% {
-		-moz-transform: translateX(-5px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateX(0);
-	}
-}
-
-@-o-keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		-o-transform: translateX(-2000px);
-	}
-
-	60% {
-		opacity: 1;
-		-o-transform: translateX(20px);
-	}
-
-	80% {
-		-o-transform: translateX(-5px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateX(0);
-	}
-}
-
-@keyframes bounceInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-2000px);
-	}
-
-	60% {
-		transform: translateX(20px);
-	}
-
-	80% {
-		transform: translateX(-5px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-@-webkit-keyframes bounceInRight {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(2000px);
-	}
-
-	60% {
-		-webkit-transform: translateX(-20px);
-	}
-
-	80% {
-		-webkit-transform: translateX(5px);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
-	}
-}
-
-@-moz-keyframes bounceInRight {
-	0% {
-		opacity: 0;
-		-moz-transform: translateX(2000px);
-	}
-
-	60% {
-		-moz-transform: translateX(-20px);
-	}
-
-	80% {
-		-moz-transform: translateX(5px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateX(0);
-	}
-}
-
-@-o-keyframes bounceInRight {
-	0% {
-		opacity: 0;
-		-o-transform: translateX(2000px);
-	}
-
-	60% {
-		-o-transform: translateX(-20px);
-	}
-
-	80% {
-		-o-transform: translateX(5px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateX(0);
-	}
-}
-
-@keyframes bounceInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(2000px);
-	}
-
-	60% {
-		transform: translateX(-20px);
-	}
-
-	80% {
-		transform: translateX(5px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-@-webkit-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(20px);
-	}	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
-}
-
-@-moz-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-
-@-o-keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes fadeInUp {
-	0% {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-@-webkit-keyframes bounceIn {
-	0% {
-		opacity: 0;
-		-webkit-transform: scale(.3);
-	}
-	50% {
-		-webkit-transform: scale(1.05);
-	}
-
-	70% {
-		-webkit-transform: scale(.9);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: scale(1);
-	}
-}
-
-@-moz-keyframes bounceIn {
-	0% {
-		opacity: 0;
-		-moz-transform: scale(.3);
-	}
-
-	50% {
-		-moz-transform: scale(1.05);
-	}
-
-	70% {
-		-moz-transform: scale(.9);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: scale(1);
-	}
-}
-
-@-o-keyframes bounceIn {
-	0% {
-		opacity: 0;
-		-o-transform: scale(.3);
-	}
-
-	50% {
-		-o-transform: scale(1.05);
-	}
-
-	70% {
-		-o-transform: scale(.9);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: scale(1);
-	}
-}
-
-@keyframes bounceIn {
-	0% {
-		opacity: 0;
-		transform: scale(.3);
-	}
-
-	50% {
-		transform: scale(1.05);
-	}
-
-	70% {
-		transform: scale(.9);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-
-@keyframes bounceIn1 {
-	0% {
-		opacity: 0;
-		transform: scale(1.5);
-	}
-
-	50% {
-		transform: scale(1.5);
-	}
-
-	70% {
-		transform: scale(.9);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
-
-@-webkit-keyframes moveUp {
-	0% {
-		opacity: 1;
-		-webkit-transform: translateY(40px);
-	}	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
-}
-
-@-moz-keyframes moveUp {
-	0% {
-		opacity: 1;
-		-moz-transform: translateY(40px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-
-@-o-keyframes moveUp {
-	0% {
-		opacity: 1;
-		-o-transform: translateY(40px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes moveUp {
-	0% {
-		opacity: 1;
-		transform: translateY(40px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@-webkit-keyframes fadeBgColor {
-	0%{
-		background:none;
-	}
-  70%{
-		background:none;
-	}
-	100%{
-		background:#464646;
-	}
-}
-@-o-keyframes fadeBgColor {
-	0%{
-		background:none;
-	}
-  70%{
-		background:none;
-	}
-	100%{
-		background:#464646;
-	}
-}
-@keyframes fadeBgColor {
-	0%{
-		background:none;
-	}
-  70%{
-		background:none;
-	}
-	100%{
-		background:#464646;
-	}
-}
-
-.animated.animationDelay{
-	animation-delay:.4s;
-	-webkit-animation-delay:.4s;
-}
-.animated.animationDelayMed{
-	animation-delay:1.2s;
-	-webkit-animation-delay:1.2s;
-}
-.animated.animationDelayLong{
-	animation-delay:1.6s;
-	-webkit-animation-delay:1.6s;
-}
-.animated.fadeBgColor {
-	-webkit-animation-name: fadeBgColor;
-	-moz-animation-name: fadeBgColor;
-	-o-animation-name: fadeBgColor;
-	animation-name: fadeBgColor;
-}
-.animated.bounceIn {
-	-webkit-animation-name: bounceIn;
-	-moz-animation-name: bounceIn;
-	-o-animation-name: bounceIn;
-	animation-name: bounceIn;
-}
-.animated.bounceIn1 {
-	-webkit-animation-name: bounceIn;
-	-moz-animation-name: bounceIn;
-	-o-animation-name: bounceIn;
-	animation-name: bounceIn;
-}
-.animated.bounceInRight {
-	-webkit-animation-name: bounceInRight;
-	-moz-animation-name: bounceInRight;
-	-o-animation-name: bounceInRight;
-	animation-name: bounceInRight;
-}
-.animated.bounceInLeft {
-	-webkit-animation-name: bounceInLeft;
-	-moz-animation-name: bounceInLeft;
-	-o-animation-name: bounceInLeft;
-	animation-name: bounceInLeft;
-}
-.animated.fadeIn {
-	-webkit-animation-name: fadeIn;
-	-moz-animation-name: fadeIn;
-	-o-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-.animated.fadeInDown {
-	-webkit-animation-name: fadeInDown;
-	-moz-animation-name: fadeInDown;
-	-o-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-}
-.animated.fadeInUp {
-	-webkit-animation-name: fadeInUp;
-	-moz-animation-name: fadeInUp;
-	-o-animation-name: fadeInUp;
-	animation-name: fadeInUp;
-}
-.animated.moveUp {
-	-webkit-animation-name: moveUp;
-	-moz-animation-name: moveUp;
-	-o-animation-name: moveUp;
-	animation-name: moveUp;
-}
-div.leftNav {
-    position: absolute;
-    overflow: auto;
-    height: 700px;
-    left: 0px;
-    top: 46px;
-}
-div#lNav .ls:hover {
-    box-shadow: 3px 2px 6px black;
-    cursor: pointer;
-}
-div#Mbody{position:relative}
-body, div.leftNav,div#hdr{background: #6f6456;overflow-x:hidden;}
-div#hdr {
-    width: 100%;z-index:50;
-    height: 45px;overflow: hidden;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-div#hdr:hover img.skilLogo1 {animation: Saad 2s;}
-div#hdr:hover img.skilLogo {animation: SaadL 2s;}
-.Mainl {
-    display: inline-block;
-    vertical-align: top;
-}
-div#lNav .ls {
-    width: 250px;
-    background: yellowgreen;
-    margin: 15px;
-    height: 76px;
-}
-div#divBody .cd {
-    background: yellow;
-    display: inline-block;
-    width: 22%;position:relative;
-    padding: 8px;overflow:hidden;
-    margin: 4px;
-    height: 200px;
-}
-div#divBody {
-    width: 1000px;
-    margin-left: 300px;
-    margin-top: 45px;overflow-y:auto;
-}	
-.cd:hover div.hid {
-    bottom: 0!important;
-}
-div.hid{ position: absolute;
-    bottom: -30%;
-    width: 100%;
-    left: 0;
-    height: 30%;background:rgba(0, 0, 0, 0.28);
-    text-align: center;
-    transition: all 0.5s ease-in,out;
-}
-div.hd {
-    display: inline-block;
-    float: right;
-    margin: 1px;
-    background: yellowgreen;
-    padding: 13px;
-}
-img.skilLogo{    width: 100px}
-
-@keyframes Saad{
-	0%{position: absolute;left:300%;top: -5px}
-	20%{position: absolute;top: 5px;}
-	40%{position: absolute;top: -5px;}
-	60%{position: absolute;top: 5px;}
-	80%{position: absolute;top: -5px;}
-100%{position: absolute;left:100px;}}
-@keyframes SaadL{
-	0%{position: absolute;left: -300px;transform: rotateY(360deg);}
-100%{position: absolute;left: 0px;transform: rotateY(0deg);}}
-.MadiL {
-    position: fixed;
-    left: 20%;
-    top: -12px;width:50%;
-}
-div.hd:hover {
-    cursor: pointer;
-    color: white;
-    border: 1px solid black;
-}
-.ls p{
-    text-align: center;
-    padding: 30px;
-}
+<script>
+$(window).scroll(function() {
+var sadath1 = $("#sadath1");
+var sadath2 = $("#sadath2");
+var inlF = $(".inlF");
+  if ($(this).scrollTop()> 100) {
+ sadath1.addClass("animateMe");
+ sadath2.addClass("animateMe");
+    $('nav').fadeIn(600);
+	$('div.txt_wlcm').fadeOut(1000);
+	$('div#wlcm').css({'filter':'none'});
+   } else {
+    $('nav').fadeOut(600);
+	$('div.txt_wlcm').fadeIn(1000);
+	$('div#wlcm').css({'filter':'blur(7px)'});
+   }
+});
+
+/// Scroll back to top
+ $('#scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+</script>
+
+</head>
+<body>
+
+<nav class="scrolltop">    
+<div id="top_nav">
+<h2 style="padding:20px"><img src="/ui/SmArt.png" style="width: 50px;vertical-align: middle;"/>SmArt</h2> 
+<div style="background:black"><div class="shaped"><a href="#" id="scrolltop" >Top &uArr;</a></div></div>
+</div>
+</nav>
+<div id="hdr">
+<div class="MadiL"><img src="/ui/imadAn.png" class="skilLogo"/><img src="/ui/imadL.png" style="width: 100px;margin: 0 -100px;" class="skilLogo1"/></div>
+<div style="position: fixed;
+    right: 30px;
+    top: 77px;
+    color: white;"><button id="counter" style="color:white;background:blue">Like</button>  No. of Likes  <span id="count">  0</span></div>
+<div class="hd hdAbt">SignUp</div>
+<div class="hd hdChl">SignIn</div>
+<div class="hd hdSgn">Challenge</div>
+<div class="hd hdUp"><a href="/MyProfile" style="color: inherit;text-decoration: none;">My Profile</a></div>
+</div>
+
+<img src="/ui/madi.png" id="mLg" style="position: absolute; z-index: 59;" />
+<div id="wlcm"> </div>
+<div class="txt_wlcm">
+<h2 id="rollO"> Smart - stArt </h2>
+<h5>"Hello There, I'm Sadath, A Oracle Apex Developer and Web Designer who Makes Smart and Effective Things.. "</h5>
+
+<h4>Start With a Better Art</h4>
+
+</div>
+<div id="middle_qt">
+<h3> GIVE ME A SMART IDIOT OVER A STUPID GENIUS ANY DAY.</h3>
+<hr>
+<h5> I'm A SmArt Person </h5>
+<p style="font-family:cursive"> I just Do StuPiD Things</p>
+</div> 
+<div>
+<div class="info"></div>
+<div class="txt_mid">
+<h3 id="sadath1"> <i>S</i>m<i>A</i>rt Introduction: - </h3>
+<blockquote id="sadath2"> <em>---------------------------
+--------------------------------------------------------________________________---------________________________---------_ </em> </blockquote> 
+</div>
+</div>
+<hr>
+
+<div id="Mbody">
+<div class="leftNav">
+<div id="lNav" class="Mainl">
+<div id="l1" class="ls list1"><p>Profile Showcase</p></div>
+<div id="l2" class="ls list2"><p>Assignments-TraceRoute</p></div>
+<div class="ls list3">3</div>
+<div class="ls list4">4</div>
+<div class="ls list5">5</div>
+<div class="ls list6">6</div>
+<div class="ls list7">7</div>
+</div></div>
+<div id="tBody" class="Mainl">
+<div id="divBody">
+    <div id="map1" class="map R1"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=18vSx2k3Oyfs0rzczau0kRRimr90" width="640" height="480"></iframe></div>
+    <div id="map2" class="map R2"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zpQc5YZ9aFgIUulWRE14M6_5j9o" width="640" height="480"></iframe></div>
+<div class="cd card1">a<div class="hid">Saad</div></div>
+<div class="cd card2">b<div class="hid">Saad</div></div>
+<div class="cd card3">c<div class="hid">Saad</div></div>
+<div class="cd card4">d<div class="hid">Saad</div></div>
+<div class="cd card5">e<div class="hid">Saad</div></div>
+<div class="cd card6">f<div class="hid">Saad</div></div>
+<div class="cd card7">g<div class="hid">Saad</div></div>
+<div class="cd card8">h<div class="hid">Saad</div></div>
+<div class="cd card9">i<div class="hid">Saad</div></div>
+<div class="cd card10">j<div class="hid">Saad</div></div>
+<div class="cd card4">d<div class="hid">Saad</div></div>
+<div class="cd card5">e<div class="hid">Saad</div></div>
+<div class="cd card6">f<div class="hid">Saad</div></div>
+<div class="cd card7">g<div class="hid">Saad</div></div>
+<div class="cd card8">h<div class="hid">Saad</div></div>
+<div class="cd card9">i<div class="hid">Saad</div></div>
+<div class="cd card10">j<div class="hid">Saad</div></div>
+</div>
+</div>
+</div>
+
+<footer style="height:300px;width:calc(100% - 6em);margin:auto">
+
+<div style="height:100%;width:74%;margin:auto">
+<div class="bounceInLeft animatable inlF"><div style="position: absolute; top: -40%;width:100%;text-align: center;"><img src="/ui/cntct.png" width= "200px"/>
+<h3 style="text-align: center;border: 1px solid black;position: relative;top: -50px; background: #f6f6f6;margin:0">Contact Me</h3>
+<p style="text-align: center;position: relative; top: -50px;padding-top: 50px; margin: 0; background: #6f6456;"> <strong>Sadath K M </strong> <br>Email: sadathullakhaliq@gmail.com</p>
+</div>
+</div>
+<div class="bounceIn animatable inlF"><div style="position: absolute; top: -30%;width:100%;text-align: center;"><img src="/ui/Tweet.png" width= "200px"/>
+<h3 style="text-align: center;border: 1px solid black;position: relative;top: 11px; background: #f6f6f6;margin:0">Follow Me On</h3>
+<p style="text-align: center;padding-top: 63px;margin: 0;background:#6f6456;"> Follow and Like in Social Website.<br>
+<div class="animatable"> <a href="https://www.facebook.com/Sadath.k.m" target="_blank"><img src="/ui/socialF.png" class="socl animatable bounceIn0" /></a> <a href="https://twitter.com/sadathkcom" target="_blank"><img src="/ui/socialT.png" class="socl animatable bounceIn2"/></a> <a href="https://plus.google.com/+sadathullaHani" target="_blank"><img src="/ui/socialG.png" class="socl animatable bounceIn3"/></a> <a href="https://www.linkedin.com/in/sadath-k-m-b681789b" target="_blank"><img src="/ui/socialL.png" class="socl animatable bounceIn4"/></a> </div>
+</p>
+</div>
+</div>
+<div class="bounceInRight animatable inlF"><div class="LI-profile-badge" style="position:absolute" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="sadath-k-m-b681789b"><a class="LI-simple-link" href='https://in.linkedin.com/in/sadath-k-m-b681789b?trk=profile-badge'>Sadath K M</a></div></div>
+
+</div>
+</footer>
+ <script src="/ui/main.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+</html>
