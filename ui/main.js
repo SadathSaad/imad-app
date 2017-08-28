@@ -11,11 +11,11 @@ clk.onclick = function (){
     clk.innerHTML=('Liked');
     $(clk).attr('disabled',true);$(clk).css({'background':'black'});
             }
-        }
+        };
 };
     request.open('GET', 'http://sadathullakhaliq.imad.hasura-app.io/counter',true);
     request.send(null);
-};
+    
 //submit name
 var nameInput = document.getElementById('name');
 var name = nameInput.value;
