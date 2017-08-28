@@ -45,7 +45,7 @@ element.innerHTML ='I am Rolling Out Here..!! <i style="font-size:17px;color:red
 element.onclick=function () {
     clearInterval(interval);
     element.innerHTML ='Smart - stArt';
-}
+};
 };
 var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
