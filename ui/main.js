@@ -8,8 +8,6 @@ clk.onclick = function (){
                
                 var counter = request.responseText;
                 document.getElementById('count').innerHTML = counter.toString();
-    clk.innerHTML=('Liked');
-    $(clk).attr('disabled',true);$(clk).css({'background':'black'});
             }
         };
 };
