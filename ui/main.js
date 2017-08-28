@@ -9,14 +9,7 @@ function moveRight (){
         marginLeft = -50;
     }
 }
-imad.onclick= function (){
-    var interval = setInterval(moveRight,100);
-element.innerHTML ='I am Rolling Out Here..!! <i style="font-size:17px;color:red"> Click to Stop Me!!</i>';
-element.onclick=function () {
-    clearInterval(interval);
-    element.innerHTML ='Smart - stArt';
-};
-};
+
 var list1 = document.getElementById('l1');
 var maps = document.getElementsByClassName('map'), i;
 var list2 = document.getElementById('l2');
