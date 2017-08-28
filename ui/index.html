@@ -1,35 +1,803 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-    <div class="container">
-        <div class="center">
-            <img id=madi src="https://pbs.twimg.com/profile_images/827906670827298818/KsW2hR-B_400x400.jpg" class="img-medium"/>
-        </div>
-        <h3>Personal</h3>
-        <div>
-            Hi,My name is shubham shekhar.
-        </div>
-        <hr/>
-        <h3>Proffesional</h3>
-        <div>
-            Pre-final year Student
-        </div>
-        <hr/>
-        <div class="footer">
-         This button <button id="counter">Click me!</button> has been clicked <span id="count">0</span> times.
-        </div>
-        <hr/>
-        <input type="text" id="name" placeholder="name">
-        <input type="submit" value="Submit" id="submit_btn">
-           <ul id="namelist">
-              
-           </ul>
-        
-    </div>
-        <script src="/ui/main.js">
-        </script>
-    </body>
-</html>
+.map {
+    display: table-cell;
+    padding: 10px;
+}
+hr {
+    border: 1px solid black;
+    border-image: linear-gradient(to left,black, rgb(21, 59, 199),#00ff89) 1;
+}
+
+.inlF{ 
+display:inline-block;
+width:300px;height:100%;margin-top: 2%;
+    background: rgba(0, 0, 0, 0.04);}
+div#top_nav{
+position:fixed; top:0;
+z-index:30;
+width:100%;
+background:rgba(0, 0, 0, 0.61);
+height:70px; color:white}
+div#wlcm{
+height:690px; 	
+width:100%;
+    background-image: url('/ui/imadStrt.jpg');
+    background-size: 100% 100%; filter:blur(7px);
+	background-attachment:fixed;
+}
+div.info{background-image: url(/ui/imadSecnd.jpg);
+    filter: blur(3px);
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -20px;}
+
+div.txt_wlcm{color:white;
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+font-size: xx-large;
+text-shadow: 2px 4px 5px black;
+}
+div.txt_mid {
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-38%, -76%);
+    font-size: larger;
+    text-shadow: 2px 4px 5px black;
+    width: 70%;
+}
+#sadath1.animateMe{
+animation:saad 2s}
+#sadath2.animateMe{
+animation:saad 3s}
+
+@keyframes saad {
+0% { transform:translateX(-200px)}
+100% {transform:translateX(0px)}
+}
+
+
+   
+.shaped{
+    float: left;
+    height: 134px;
+    width: 260px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.61);
+    top: 70px;
+    right: 0;
+}
+.shaped{
+    /*...*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+
+div.nav_page{position: absolute;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    right: 2%;
+    top: 10%;}
+.scrolltop {
+z-index:500;
+ display:none;
+}
+#scrolltop{
+    color: white;
+    float: right;
+    text-decoration: none;
+    position: absolute;
+    bottom: 12%;
+    right: 2%;
+    font-weight: bold;}
+div#middle_qt	{
+	width: 14%;
+    text-align: center;
+    padding: 2%;
+    background: rgba(0, 0, 255, 0.61);
+    color: white;
+    position: absolute;
+    z-index: 5;
+    bottom: -17%;line-height:2;
+    left: 5%;}
+	
+	img.socl {
+    width: 35px;
+    margin: 10px;
+}
+.block {
+  height: 5em;
+  line-height: 5em;
+  width: 10em;
+  background: #464646;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 1em auto;
+  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
+}
+
+.animatable {
+  
+  /* initially hide animatable objects */
+  visibility: hidden;
+  
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.bounceIn0 { animation: bounceIn1 3s; cursor:pointer;
+}
+.bounceIn2 { animation: bounceIn1 4s;cursor:pointer;
+}
+.bounceIn3 { animation: bounceIn1 5s;cursor:pointer;
+}
+.bounceIn4 { animation: bounceIn1 6s;cursor:pointer;
+}
+
+/* CSS Animations (extracted from http://glifo.uiparade.com/) */
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-2000px);
+	}
+	60% {
+		-webkit-transform: translateX(20px);
+	}
+
+	80% {
+		-webkit-transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(-2000px);
+	}
+
+	60% {
+		-moz-transform: translateX(20px);
+	}
+
+	80% {
+		-moz-transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-o-keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(-2000px);
+	}
+
+	60% {
+		opacity: 1;
+		-o-transform: translateX(20px);
+	}
+
+	80% {
+		-o-transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-2000px);
+	}
+
+	60% {
+		transform: translateX(20px);
+	}
+
+	80% {
+		transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@-webkit-keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(2000px);
+	}
+
+	60% {
+		-webkit-transform: translateX(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(2000px);
+	}
+
+	60% {
+		-moz-transform: translateX(-20px);
+	}
+
+	80% {
+		-moz-transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-o-keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(2000px);
+	}
+
+	60% {
+		-o-transform: translateX(-20px);
+	}
+
+	80% {
+		-o-transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes bounceInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+
+	60% {
+		transform: translateX(-20px);
+	}
+
+	80% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(.3);
+	}
+	50% {
+		-webkit-transform: scale(1.05);
+	}
+
+	70% {
+		-webkit-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}
+
+@-moz-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-moz-transform: scale(.3);
+	}
+
+	50% {
+		-moz-transform: scale(1.05);
+	}
+
+	70% {
+		-moz-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: scale(1);
+	}
+}
+
+@-o-keyframes bounceIn {
+	0% {
+		opacity: 0;
+		-o-transform: scale(.3);
+	}
+
+	50% {
+		-o-transform: scale(1.05);
+	}
+
+	70% {
+		-o-transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: scale(1);
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		opacity: 0;
+		transform: scale(.3);
+	}
+
+	50% {
+		transform: scale(1.05);
+	}
+
+	70% {
+		transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes bounceIn1 {
+	0% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+	70% {
+		transform: scale(.9);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes moveUp {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(40px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes moveUp {
+	0% {
+		opacity: 1;
+		-moz-transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes moveUp {
+	0% {
+		opacity: 1;
+		-o-transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes moveUp {
+	0% {
+		opacity: 1;
+		transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes fadeBgColor {
+	0%{
+		background:none;
+	}
+  70%{
+		background:none;
+	}
+	100%{
+		background:#464646;
+	}
+}
+@-o-keyframes fadeBgColor {
+	0%{
+		background:none;
+	}
+  70%{
+		background:none;
+	}
+	100%{
+		background:#464646;
+	}
+}
+@keyframes fadeBgColor {
+	0%{
+		background:none;
+	}
+  70%{
+		background:none;
+	}
+	100%{
+		background:#464646;
+	}
+}
+
+.animated.animationDelay{
+	animation-delay:.4s;
+	-webkit-animation-delay:.4s;
+}
+.animated.animationDelayMed{
+	animation-delay:1.2s;
+	-webkit-animation-delay:1.2s;
+}
+.animated.animationDelayLong{
+	animation-delay:1.6s;
+	-webkit-animation-delay:1.6s;
+}
+.animated.fadeBgColor {
+	-webkit-animation-name: fadeBgColor;
+	-moz-animation-name: fadeBgColor;
+	-o-animation-name: fadeBgColor;
+	animation-name: fadeBgColor;
+}
+.animated.bounceIn {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+.animated.bounceIn1 {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+.animated.bounceInRight {
+	-webkit-animation-name: bounceInRight;
+	-moz-animation-name: bounceInRight;
+	-o-animation-name: bounceInRight;
+	animation-name: bounceInRight;
+}
+.animated.bounceInLeft {
+	-webkit-animation-name: bounceInLeft;
+	-moz-animation-name: bounceInLeft;
+	-o-animation-name: bounceInLeft;
+	animation-name: bounceInLeft;
+}
+.animated.fadeIn {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+.animated.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+.animated.moveUp {
+	-webkit-animation-name: moveUp;
+	-moz-animation-name: moveUp;
+	-o-animation-name: moveUp;
+	animation-name: moveUp;
+}
+div.leftNav {
+    position: absolute;
+    overflow: auto;
+    height: 700px;
+    left: 0px;
+    top: 46px;
+}
+div#lNav .ls:hover {
+    box-shadow: 3px 2px 6px black;
+    cursor: pointer;
+}
+div#Mbody{position:relative}
+body, div.leftNav,div#hdr{background: #6f6456;overflow-x:hidden;}
+div#hdr {
+    width: 100%;z-index:50;
+    height: 45px;overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+div#hdr:hover img.skilLogo1 {animation: Saad 2s;}
+div#hdr:hover img.skilLogo {animation: SaadL 2s;}
+.Mainl {
+    display: inline-block;
+    vertical-align: top;
+}
+div#lNav .ls {
+    width: 250px;
+    background: yellowgreen;
+    margin: 15px;
+    height: 76px;
+}
+div#divBody .cd {
+    background: yellow;
+    display: inline-block;
+    width: 22%;position:relative;
+    padding: 8px;overflow:hidden;
+    margin: 4px;
+    height: 200px;
+}
+div#divBody {
+    width: 1000px;
+    margin-left: 300px;
+    margin-top: 45px;overflow-y:auto;
+}	
+.cd:hover div.hid {
+    bottom: 0!important;
+}
+div.hid{ position: absolute;
+    bottom: -30%;
+    width: 100%;
+    left: 0;
+    height: 30%;background:rgba(0, 0, 0, 0.28);
+    text-align: center;
+    transition: all 0.5s ease-in,out;
+}
+div.hd {
+    display: inline-block;
+    float: right;
+    margin: 1px;
+    background: yellowgreen;
+    padding: 13px;
+}
+img.skilLogo{    width: 100px}
+
+@keyframes Saad{
+	0%{position: absolute;left:300%;top: -5px}
+	20%{position: absolute;top: 5px;}
+	40%{position: absolute;top: -5px;}
+	60%{position: absolute;top: 5px;}
+	80%{position: absolute;top: -5px;}
+100%{position: absolute;left:100px;}}
+@keyframes SaadL{
+	0%{position: absolute;left: -300px;transform: rotateY(360deg);}
+100%{position: absolute;left: 0px;transform: rotateY(0deg);}}
+.MadiL {
+    position: fixed;
+    left: 20%;
+    top: -12px;width:50%;
+}
+div.hd:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+}
+.ls p{
+    text-align: center;
+    padding: 30px;
+}
