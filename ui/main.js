@@ -28,8 +28,9 @@ clk.onclick = function (){
     $(clk).attr('disabled',true);$(clk).css({'background':'black'});
             }
         };
+       request.open('GET', 'http://sadathullakhaliq.imad.hasura-app.io/counter',true);
+  request.send(null);
 };
- //   request.open('GET', '/counter',true);
-  //  request.send(null);
+ 
 
 
